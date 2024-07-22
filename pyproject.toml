@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hot-nerds-app"
+version = "0.1.0"
+description = ""
+authors = ["veledara <painriddlegaming@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytelegrambotapi = "^4.21.0"
+requests = "^2.32.3"
+pydantic-settings = "^2.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

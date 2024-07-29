@@ -4,13 +4,14 @@ from aiogram.types import Message
 
 from settings import router, dp, bot
 from keyboards import start_keyboard
+from messages import start_message
 
 
 @router.message(Command("start"))
 async def start(message: Message):
 
     await message.answer(
-        text="The bot is under development. Wait for the news.",
+        text=start_message,
         reply_markup=start_keyboard,
     )
 
